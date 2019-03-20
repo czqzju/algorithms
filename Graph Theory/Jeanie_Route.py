@@ -7,15 +7,15 @@ import sys
 # Complete the jeanisRoute function below.
 #
 maxDistance = 0
-def maxDepth(root, visited, non_letters, edges):
+def maxDepth(root, visited, except_citites, edges):
     global maxDistance
     visited[root] = True
     childrenDeps = []
     if root in edges:
         for child in edges[root]:
-            if visited[child] or child in non_letters: continue
-            childrenDeps.append(maxDepth(child, visited, non_letters, edges) + edges[root][child])
-        sorted(childrenDeps, reverse= True)
+            if visited[child] or child in except_citites: continue
+            childrenDeps.append(maxDepth(child, visited, except_citites, edges) + edges[root][child])
+        list.sort(childrenDeps, reverse= True)
         if len(childrenDeps) >= 2:
             curDis = childrenDeps[0] + childrenDeps[1]
             if curDis > maxDistance: maxDistance = curDis
@@ -46,18 +46,26 @@ def jeanisRoute(city, roads):
         else:
             edges[v2] = dict()
             edges[v2][v1] = dis
-    non_letters = set()
+    non_letters = []
+    except_citites = set()
     for k, v in edges.items():
-        if k not in city and len(v) == 1: non_letters.add(k)
-    totalRoad = sum(roads[i][2] for i in range(0, len(roads)) if roads[i][0] not in non_letters and roads[i][1] not in non_letters) * 2
+        if k not in city and len(v) == 1: non_letters.append(k)
+    while len(non_letters):
+        cur = non_letters.pop()
+        for k, v in edges[cur].items():
+            del edges[k][cur]
+            if k not in city and len(edges[k]) == 1: non_letters.append(k)
+        except_citites.add(cur)
+
+    totalRoad = sum(roads[i][2] for i in range(0, len(roads)) if roads[i][0] not in except_citites and roads[i][1] not in except_citites) * 2
     visited = [False] * (len(roads) + 2)
     root = 1
+    rootLen = 0
     for i in range(1, len(roads) + 2):
-        if i not in non_letters:
+        if i not in except_citites and len(edges[i]) > rootLen:
             root = i
-            break
-
-    maxDepth(root, visited, non_letters, edges)
+            rootLen = len(edges[i])
+    maxDepth(root, visited, except_citites, edges)
     return totalRoad - maxDistance
 
 if __name__ == '__main__':
