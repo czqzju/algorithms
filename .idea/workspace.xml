@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c64a4a23-5bcb-4593-a75a-e2dfe2bd74f6" name="Default" comment="" />
+    <list default="true" id="c64a4a23-5bcb-4593-a75a-e2dfe2bd74f6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Graph Theory/Rust_Murderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,29 +43,29 @@
     <session id="22594478">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="4" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2433" />
+          <entry key="py" value="3139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2433" />
+          <entry key="Python" value="3139" />
         </counts>
       </usages-collector>
     </session>
@@ -78,11 +81,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Graph Theory/Jeanie_Route.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
               <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding>
+                <element signature="e#16#25#0" expanded="true" />
+                <marker date="1553161394898" expanded="true" signature="176:181" ph="..." />
+                <marker date="1553161394898" expanded="true" signature="176:963" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,6 +143,7 @@
         <option value="$PROJECT_DIR$/appium/appium-test.py" />
         <option value="$PROJECT_DIR$/Graph Theory/Crab_Graphs.py" />
         <option value="$PROJECT_DIR$/Graph Theory/Jeanie_Route.py" />
+        <option value="$PROJECT_DIR$/Graph Theory/Rust_Murderer.py" />
       </list>
     </option>
   </component>
@@ -160,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,6 +204,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Jeanie_Route">
+  <component name="RunManager" selected="Python.Rust_Murderer">
     <configuration name="Abbreviation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,7 +292,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Minimum Time Required" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Rust_Murderer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,11 +300,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Interview Preparation Kit/Search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Graph Theory" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Interview Preparation Kit/Search/Minimum Time Required.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph Theory/Rust_Murderer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -317,19 +335,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Minimum Time Required" />
       <item itemvalue="Python.Abbreviation" />
       <item itemvalue="Python.appium-test" />
       <item itemvalue="Python.Crab_Graphs" />
       <item itemvalue="Python.Jeanie_Route" />
+      <item itemvalue="Python.Rust_Murderer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Rust_Murderer" />
         <item itemvalue="Python.Jeanie_Route" />
         <item itemvalue="Python.Crab_Graphs" />
         <item itemvalue="Python.appium-test" />
         <item itemvalue="Python.Abbreviation" />
-        <item itemvalue="Python.Minimum Time Required" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +365,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22181243" />
@@ -355,8 +373,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3756786" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3756786" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -419,6 +437,31 @@
           <url>file://$PROJECT_DIR$/Graph Theory/Jeanie_Route.py</url>
           <line>58</line>
           <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="234" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -614,6 +657,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Theory/Rust_Murderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+            <marker date="1553161394898" expanded="true" signature="176:181" ph="..." />
+            <marker date="1553161394898" expanded="true" signature="176:963" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
