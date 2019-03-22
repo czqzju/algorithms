@@ -28,7 +28,7 @@ def roadsInHackerland(n, roads):
             else:
                 edges[v1][v2] = value
                 edges[v2][v1] = value
-                parent[v2] = p1
+                parent[p2] = p1
                 cntOfEdges += 1
 
         elif v1 in edges and v2 not in edges:
