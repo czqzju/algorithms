@@ -17,7 +17,7 @@ def roadsInHackerland(n, roads):
     edges = {}
     cntOfEdges = 0
 
-    for i in range(0, n):
+    for i in range(0, len(roads)):
         v1 = roads[i][0] - 1
         v2 = roads[i][1] - 1
         value = roads[i][2]
@@ -50,7 +50,7 @@ def roadsInHackerland(n, roads):
             cntOfEdges += 1
         if cntOfEdges == n - 1: break
 
-    q = [i for i in range(0, n) if len(edges[i]) == 1]
+    q = [i for i in edges.keys() if len(edges[i]) == 1]
 
     dis = 0
     while len(q):
@@ -64,7 +64,7 @@ def roadsInHackerland(n, roads):
             if len(edges[k]) == 1: q.append(k)
         del edges[cur]
 
-    return dis
+    return bin(dis)[2:]
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')

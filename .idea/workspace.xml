@@ -60,12 +60,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4528" />
+          <entry key="py" value="4577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4528" />
+          <entry key="Python" value="4577" />
         </counts>
       </usages-collector>
     </session>
@@ -105,13 +105,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
-                <marker date="1553235837172" expanded="true" signature="119:201" ph="..." />
-                <marker date="1553235837172" expanded="true" signature="233:238" ph="..." />
-                <marker date="1553235837172" expanded="true" signature="233:1824" ph="..." />
+                <marker date="1553244994761" expanded="true" signature="119:201" ph="..." />
+                <marker date="1553244994761" expanded="true" signature="233:238" ph="..." />
+                <marker date="1553244994761" expanded="true" signature="233:1843" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -388,8 +388,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3756786" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3756786" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -482,6 +482,41 @@
           <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
           <line>64</line>
           <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="250" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -699,13 +734,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="68" column="26" lean-forward="true" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="225">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
-            <marker date="1553235837172" expanded="true" signature="119:201" ph="..." />
-            <marker date="1553235837172" expanded="true" signature="233:238" ph="..." />
-            <marker date="1553235837172" expanded="true" signature="233:1824" ph="..." />
+            <marker date="1553244994761" expanded="true" signature="119:201" ph="..." />
+            <marker date="1553244994761" expanded="true" signature="233:238" ph="..." />
+            <marker date="1553244994761" expanded="true" signature="233:1843" ph="..." />
           </folding>
         </state>
       </provider>
