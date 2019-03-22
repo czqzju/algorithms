@@ -7,34 +7,31 @@ import sys
 # Complete the rustMurdered function below.
 #
 def rustMurderer(n, roads, s):
-    allNodes = set()
-    distance = [0] * n
-    visited = [False] * n
+    distance = [1] * n
     edges = dict()
-    for i in range(0, n):
-        allNodes.add(i)
-        edges[i] = set([i])
+
     for i in range(0, len(roads)):
         v1 = roads[i][0] - 1
         v2 = roads[i][1] - 1
         if v1 in edges: edges[v1].add(v2)
+        else: edges[v1] = set([v2])
         if v2 in edges: edges[v2].add(v1)
+        else: edges[v2] = set([v1])
 
-    for k in edges:
-        edges[k] = allNodes.difference(edges[k])
-
-    q = [s]
-    visited[s] = True
-    while len(q):
-        cur = q.pop()
-        if cur in edges:
-            for child in edges[cur]:
-                if not visited[child]:
-                    distance[child] = distance[cur] + 1
-                    visited[child] = True
-                    q.append(child)
-    return [distance[i] for i in range(0, n) if not i == s]
-
+    not_visited = edges[s] if s in edges else set()
+    newly_visited = set()
+    curr_dist = 2
+    while len(not_visited) > 0:
+        for i in not_visited:
+            diff = not_visited | edges[i]
+            if len(diff) < n:
+                distance[i] = curr_dist
+                newly_visited.add(i)
+        not_visited = not_visited - newly_visited
+        newly_visited = set()
+        curr_dist += 1
+    del distance[s]
+    return distance
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
