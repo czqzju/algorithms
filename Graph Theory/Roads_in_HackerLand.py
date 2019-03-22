@@ -60,7 +60,7 @@ def roadsInHackerland(n, roads):
             dis += numOfNodes[cur] * (n - numOfNodes[cur]) * 2 ** v
 
             del edges[k][cur]
-            numOfNodes[k] += 1
+            numOfNodes[k] += numOfNodes[cur]
             if len(edges[k]) == 1: q.append(k)
         del edges[cur]
 
