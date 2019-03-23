@@ -1,5 +1,5 @@
 #!/bin/python3
-
+#https://www.hackerrank.com/challenges/johnland/problem  pypy3
 import os
 import sys
 
@@ -10,12 +10,20 @@ def findParent(node, parent):
     while not node == parent[node]: node = parent[node]
     return parent[node]
 
+
+def updateParent(node, parent, p):
+    while parent[node] != p:
+        tmp = parent[node]
+        parent[node] = p
+        node = tmp
+
 def roadsInHackerland(n, roads):
     roads.sort(key = lambda road:road[2])
     parent = [i for i in range(0, n)]
     numOfNodes = [1] * n
     edges = {}
     cntOfEdges = 0
+
 
     for i in range(0, len(roads)):
         v1 = roads[i][0] - 1
@@ -29,6 +37,7 @@ def roadsInHackerland(n, roads):
                 edges[v1][v2] = value
                 edges[v2][v1] = value
                 parent[p2] = p1
+                updateParent(v2, parent, p1)
                 cntOfEdges += 1
 
         elif v1 in edges and v2 not in edges:
