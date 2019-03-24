@@ -5,6 +5,7 @@ import os
 import random
 import re
 import sys
+import heapq
 
 #
 # Complete the 'getCost' function below.
@@ -42,33 +43,57 @@ def getCost(g_nodes, g_from, g_to, g_weight):
             else: edges[v2][v1] = weight
         else:
             edges[v2] = {v1:weight}
-
-
-    cost = [-1] * g_nodes
+    ## use heap
+    cost = [[sys.maxsize, i] for i in range(0, g_nodes)]
     visited = set()
-    waitingNodes = set()
-    waitingNodes.add(start)
-    cost[start] = 0
-    minLen = sys.maxsize
-    curMin = start
+    waitingNodes = []
+    cost[start][0] = 0
+    heapq.heappush(waitingNodes, cost[start])
+
     while len(waitingNodes):
-        for node in waitingNodes:
-            if cost[node]< minLen:
-                curMin = node
-                minLen = cost[node]
+
+        curNode= heapq.heappop(waitingNodes)
+        curMin = curNode[1]
+        if curMin in visited: continue
         if curMin == end: break
         if curMin in edges:
             for k, v in edges[curMin].items():
-                if k not in visited and k not in waitingNodes:
-                    if v > cost[curMin]:
-                        cost[k] = v
+                if k not in visited:
+                    if cost[k] not in waitingNodes:
+                        cost[k][0] = v if v > cost[curMin][0] else cost[curMin][0]
+                        heapq.heappush(waitingNodes, cost[k])
                     else:
-                        cost[k] = cost[curMin]
-                    waitingNodes.add(k)
-        waitingNodes.remove(curMin)
+                        newDis =  v if v > cost[curMin][0] else cost[curMin][0]
+                        if newDis < cost[k][0]:
+                            cost[k] = [newDis, k]
+                            heapq.heappush(waitingNodes,cost[k])
         visited.add(curMin)
-        minLen = sys.maxsize
-    print("NO PATH EXISTS" if cost[end] == -1 else cost[end])
+    print("NO PATH EXISTS" if cost[end][0] == sys.maxsize else cost[end][0])
+    # cost = [-1] * g_nodes
+    # visited = set()
+    # waitingNodes = set()
+    # waitingNodes.add(start)
+    # cost[start] = 0
+    # minLen = sys.maxsize
+    # curMin = start
+    # while len(waitingNodes):
+    #     for node in waitingNodes:
+    #         if cost[node] < minLen:
+    #             curMin = node
+    #             minLen = cost[node]
+    #     if curMin == end: break
+    #     if curMin in edges:
+    #         for k, v in edges[curMin].items():
+    #             if k not in visited:
+    #                 if k not in waitingNodes:
+    #                     cost[k] = v if v > cost[curMin] else cost[curMin]
+    #                     waitingNodes.add(k)
+    #                 else:
+    #                     cost[k] = min(cost[k], v if v > cost[curMin] else cost[curMin])
+    #     waitingNodes.remove(curMin)
+    #     visited.add(curMin)
+    #     minLen = sys.maxsize
+    # print("NO PATH EXISTS" if cost[end] == -1 else cost[end])
 
 
 
