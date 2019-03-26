@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64a4a23-5bcb-4593-a75a-e2dfe2bd74f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,30 +44,30 @@
     <session id="22594478">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5198" />
+          <entry key="py" value="6869" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5198" />
+          <entry key="Python" value="6869" />
         </counts>
       </usages-collector>
     </session>
@@ -106,11 +107,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="494">
               <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="e#78#87#0" expanded="true" />
-                <marker date="1553477969080" expanded="true" signature="1019:2088" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,12 +119,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="449">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
-                <element signature="e#16#27#0" expanded="true" />
-                <marker date="1553494004492" expanded="true" signature="410:415" ph="..." />
+                <element signature="e#83#94#0" expanded="true" />
+                <marker date="1553581216710" expanded="true" signature="467:622" ph="..." />
+                <marker date="1553581216710" expanded="true" signature="620:622" ph="..." />
+                <marker date="1553581216710" expanded="true" signature="655:660" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -171,6 +182,7 @@
         <option value="$PROJECT_DIR$/Graph Theory/test.py" />
         <option value="$PROJECT_DIR$/Graph Theory/Rust_Murderer.py" />
         <option value="$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py" />
+        <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py" />
       </list>
     </option>
@@ -257,27 +269,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Synchronous_Shopping">
-    <configuration name="Jeanie_Route" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Graph Theory" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph Theory/Jeanie_Route.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Roads_in_HackerLand" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,6 +332,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -363,19 +375,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Jeanie_Route" />
       <item itemvalue="Python.Rust_Murderer" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.Roads_in_HackerLand" />
       <item itemvalue="Python.Synchronous_Shopping" />
+      <item itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Synchronous_Shopping" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.Roads_in_HackerLand" />
         <item itemvalue="Python.Rust_Murderer" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.Jeanie_Route" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +405,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22181243" />
@@ -531,6 +543,11 @@
           <line>34</line>
           <option name="timeStamp" value="250" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -544,11 +561,21 @@
       <configuration name="PythonConfigurationType">
         <watch expression="len(except_citites)" language="Python" />
         <watch expression="edges[311]" language="Python" />
+        <watch expression="edges" language="Python" />
+        <watch expression="distance[start][types]" />
+        <watch expression="edges[start][k]" />
+        <watch expression="distance" />
+        <watch expression="(i | j) == ((1 &lt;&lt; k) - 1)" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>edges</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>edges[311]</expression-string>
         <language-id>Python</language-id>
@@ -594,8 +621,10 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
       <expression>
-        <expression-string>bisect.bisect_left(dicts[k1], v[i])</expression-string>
+        <expression-string>distance[start][types]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -714,6 +743,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Theory/test.py" />
     <entry file="file://$PROJECT_DIR$/Interview Preparation Kit/Search/Minimum Time Required.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -725,13 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Graph Theory/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -747,22 +770,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Graph Theory/Roads_in_HackerLand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="494">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="e#78#87#0" expanded="true" />
-            <marker date="1553477969080" expanded="true" signature="1019:2088" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Graph Theory/Synchronous_Shopping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="449">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
-            <element signature="e#16#27#0" expanded="true" />
-            <marker date="1553494004492" expanded="true" signature="410:415" ph="..." />
+            <element signature="e#83#94#0" expanded="true" />
+            <marker date="1553581216710" expanded="true" signature="467:622" ph="..." />
+            <marker date="1553581216710" expanded="true" signature="620:622" ph="..." />
+            <marker date="1553581216710" expanded="true" signature="655:660" ph="..." />
           </folding>
         </state>
       </provider>
