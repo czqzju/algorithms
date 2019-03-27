@@ -28,18 +28,24 @@ def pylons(k, arr):
     
 
 if __name__ == '__main__':
-    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    nk = input().split()
-
-    n = int(nk[0])
-
-    k = int(nk[1])
-
-    arr = list(map(int, input().rstrip().split()))
-
-    result = pylons(k, arr)
-    print(result)
-    # fptr.write(str(result) + '\n')
-    #
-    # fptr.close()
+    n, k = input().strip().split(" ")
+    n, k = (int(n), int(k))
+    a = list(map(int, input().split(" ")))
+    i, j, trans, flag, loc = 0, 0, 0, 0, 0
+    while (i < n):
+        trans += 1
+        j = i + k - 1
+        if (j > n):
+            j = n - 1
+        while (loc <= j < n and a[j] == 0):
+            j -= 1
+        if (j < loc):
+            print("-1 ")
+            flag = 1
+            break
+        else:
+            loc = j + 1
+            j += k
+            i = j
+    if (flag == 0):
+        print(trans)
