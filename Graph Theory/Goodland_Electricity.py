@@ -20,7 +20,7 @@ def pylons(k, arr):
                 ret += 1
                 break
         if found == True:
-            cur += k - 1
+            cur += k
         else:
             return -1
     return ret

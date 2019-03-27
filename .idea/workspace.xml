@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c64a4a23-5bcb-4593-a75a-e2dfe2bd74f6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Graph Theory/Goodland_Electricity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graph Theory/Goodland_Electricity.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,11 +126,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Graph Theory/Goodland_Electricity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state relative-caret-position="475">
+              <caret line="25" column="14" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="25" selection-end-column="14" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
-                <marker date="1553666744653" expanded="true" signature="143:521" ph="..." />
+                <marker date="1553685379448" expanded="true" signature="143:517" ph="..." />
               </folding>
             </state>
           </provider>
@@ -799,11 +796,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Graph Theory/Goodland_Electricity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state relative-caret-position="475">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
-            <marker date="1553666744653" expanded="true" signature="143:521" ph="..." />
+            <marker date="1553685379448" expanded="true" signature="143:517" ph="..." />
           </folding>
         </state>
       </provider>
