@@ -23,41 +23,9 @@ global a, distance, edges
 def push(vn, vm, vv, s):
     global a, distance, edges
     if distance[vn][vm] <= vv: return
-    if (vn, vm) in s: s.pop((vn, vm))
     distance[vn][vm] = vv
     s[(vn, vm)] = vv
 
-def shop(n, num, centers, roads):
-    global a, distance, edges, s
-    INF = sys.maxsize
-    distance = [[INF for _ in range(0, 2 ** num)] for _ in range(0, n)]
-    edges = dict()
-    for i in range(0, n):
-        shopContents = centers[i].rstrip().split()
-        for j in range(1, len(shopContents)):
-            a[i] = a[i] | 1 << (int(shopContents[j]) - 1)
-
-    for i in range(0, len(roads)):
-        v1 = roads[i][0] - 1
-        v2 = roads[i][1] - 1
-        if v1 in edges: edges[v1][v2] = roads[i][2]
-        else: edges[v1] = {v2 : roads[i][2]}
-        if v2 in edges: edges[v2][v1] = roads[i][2]
-        else: edges[v2] = {v1 : roads[i][2]}
-    s = dict()
-    push(0, a[0], 0, s)
-
-    while len(s):
-        (curNode, types), dis = s.popitem()
-        for k, _ in edges[curNode].items():
-            push(k, types | a[k], dis + edges[curNode][k], s)
-    ret = INF
-
-    for i in range(1, 1 << num):
-        for j in range(i, 1 << num):
-            if (i | j) == ((1 << num) - 1):
-                ret = min(ret, max(distance[n - 1][i], distance[n - 1][j]))
-    return ret
 
 
 if __name__ == '__main__':
@@ -69,25 +37,51 @@ if __name__ == '__main__':
 
     m = int(first_multiple_input[1])
 
-    k = int(first_multiple_input[2])
+    num = int(first_multiple_input[2])
 
-    global a
+    INF = sys.maxsize
+    global a, distance, edges, s
     a = [0] * n
+    distance = [[INF for _ in range(0, 2 ** num)] for _ in range(0, n)]
+    edges = dict()
+    # centers = []
+    for i in range(n):
+        shopContents = input().rstrip().split()
+        for j in range(1, len(shopContents)):
+            a[i] = a[i] | 1 << (int(shopContents[j]) - 1)
 
-    centers = []
 
-    for _ in range(n):
-        centers_item = input()
-        centers.append(centers_item)
 
-    roads = []
 
     for _ in range(m):
-        roads.append(list(map(int, input().rstrip().split())))
+        roads = list(map(int, input().rstrip().split()))
+        v1 = roads[0] - 1
+        v2 = roads[1] - 1
+        if v1 in edges:
+            edges[v1][v2] = roads[2]
+        else:
+            edges[v1] = {v2: roads[2]}
+        if v2 in edges:
+            edges[v2][v1] = roads[2]
+        else:
+            edges[v2] = {v1: roads[2]}
 
-    res = shop(n, k, centers, roads)
-    print(res)
 
+    s = OrderedDict()
+    push(0, a[0], 0, s)
+
+    while len(s):
+        (curNode, types), dis = s.popitem(last=False)
+        for k, _ in edges[curNode].items():
+            push(k, types | a[k], dis + edges[curNode][k], s)
+    ret = INF
+
+    for i in range(1, 1 << num):
+        for j in range(i, 1 << num):
+            if (i | j) == ((1 << num) - 1):
+                ret = min(ret, max(distance[n - 1][i], distance[n - 1][j]))
+
+    print(ret)
     # fptr.write(str(res) + '\n')
     #
     # fptr.close()
