@@ -8,11 +8,27 @@ import sys
 
 # Complete the pylons function below.
 def pylons(k, arr):
-    if n <= k: return 1
+    ret = 0
+    cur = 0
+    while cur < n:
+        found = False
+        for i in range(k - 1, 0, -1):
+            if cur + i >=n: continue
+            if arr[cur + i] == 1:
+                found = True
+                cur = cur + i
+                ret += 1
+                break
+        if found == True:
+            cur += k - 1
+        else:
+            return -1
+    return ret
+
     
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     nk = input().split()
 
@@ -23,7 +39,7 @@ if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
     result = pylons(k, arr)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    print(result)
+    # fptr.write(str(result) + '\n')
+    #
+    # fptr.close()
