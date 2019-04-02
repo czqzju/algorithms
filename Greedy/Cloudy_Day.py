@@ -40,8 +40,8 @@ def maximumPeople(p, x, y, r):
         elif cloudsOfCity[i] == 1:
             citiesWithOne.append(locOfCities[i])
             prePopu = 0
-            if len(citiesWithOne) > 1:
-                prePopu += preSum[i - 1]
+            if len(preSum) > 0:
+                prePopu += preSum[len(preSum) - 1]
             preSum.append(prePopu + cities[locOfCities[i]])
     curMaxPopu = 0
     for i in range(len(y)):
@@ -51,10 +51,11 @@ def maximumPeople(p, x, y, r):
         r_city = bisect.bisect_right(citiesWithOne, right)
         if l_city >= len(citiesWithOne) or r_city == 0: continue
         if r_city == len(citiesWithOne) or citiesWithOne[r_city] > y[i] + r[i]: r_city -= 1
-        if l_city == r_city:
-            if l_city > 0: curMaxPopu = max(curMaxPopu,cities[citiesWithOne[l_city]] - cities[citiesWithOne[l_city - 1]])
-            else: curMaxPopu = max(curMaxPopu,cities[citiesWithOne[l_city]])
-        else: curMaxPopu = max(curMaxPopu,cities[citiesWithOne[r_city]] - cities[citiesWithOne[l_city]])
+
+        if l_city > 0:
+            curMaxPopu = max(curMaxPopu, preSum[r_city] - preSum[l_city - 1])
+        else:
+            curMaxPopu = max(curMaxPopu, preSum[r_city])
     return curMaxPopu + sumOfSunnyCities
 
 if __name__ == '__main__':
