@@ -23,16 +23,18 @@ def maximumPeople(p, x, y, r):
         while l_city < len(locOfCities) and locOfCities[l_city] in range(y[i] - r[i], y[i] + r[i] + 1):
             if y[i] in citiesOfCloud: citiesOfCloud[y[i]].add(locOfCities[l_city])
             else:
-                citiesOfCloud[y[i]] = set(locOfCities[l_city])
+                citiesOfCloud[y[i]] = set([locOfCities[l_city]])
             if locOfCities[l_city] in cloudsOfCity: cloudsOfCity[locOfCities[l_city]] += 1
             else: cloudsOfCity[locOfCities[l_city]] = 1
             l_city += 1
-    sumOfSunnyCities = sum(cities[city] for city in cloudsOfCity if cloudsOfCity[city] == 0)
+    sunnyCities = set(cities.keys()).difference(cloudsOfCity.keys())
+    sumOfSunnyCities = sum(cities[city] for city in sunnyCities)
     curMaxPopuOfCloud = 0
     for i in range(len(y)):
         if len(citiesOfCloud):
-            sumOfOneCloud = sum(cities[k] for k in citiesOfCloud if cloudsOfCity[k] == 1)
-            curMaxPopuOfCloud = max(sumOfOneCloud, curMaxPopuOfCloud)
+            for _, v in citiesOfCloud.items():
+                sumOfOneCloud = sum(cities[city] for city in v if cloudsOfCity[city] == 1)
+                curMaxPopuOfCloud = max(sumOfOneCloud, curMaxPopuOfCloud)
     return sumOfSunnyCities + curMaxPopuOfCloud
 
 if __name__ == '__main__':
