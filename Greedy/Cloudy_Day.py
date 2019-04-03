@@ -21,6 +21,7 @@ def maximumPeople(p, x, y, r):
         right = y[i] + r[i]
         l_city = bisect.bisect_left(locOfCities, left)
         r_city = bisect.bisect_right(locOfCities, right)
+        if l_city == len(locOfCities): continue
         cloudsOfCity[l_city] += 1
         if r_city < len(locOfCities):
             if locOfCities[r_city] > y[i] + r[i]:
@@ -60,22 +61,26 @@ def maximumPeople(p, x, y, r):
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fr = open('data.txt', 'rt')
 
-    n = int(input())
+    n = int(fr.readline())
 
-    p = list(map(int, input().rstrip().split()))
 
-    x = list(map(int, input().rstrip().split()))
+    p = list(map(int, fr.readline().rstrip().split()))
 
-    m = int(input())
+    x = list(map(int, fr.readline().rstrip().split()))
 
-    y = list(map(int, input().rstrip().split()))
 
-    r = list(map(int, input().rstrip().split()))
+    m = int(fr.readline())
+
+    y = list(map(int, fr.readline().rstrip().split()))
+
+    r = list(map(int, fr.readline().rstrip().split()))
 
     result = maximumPeople(p, x, y, r)
-
     print(result)
+
+    fr.close()
 
     # fptr.write(str(result) + '\n')
     #
