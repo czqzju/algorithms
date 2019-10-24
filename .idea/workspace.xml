@@ -8,34 +8,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="22594478">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Greedy/Cloudy_Day.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
+            <state relative-caret-position="1232">
               <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Miscellaneous/Maximum_Xor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
               <caret line="53" selection-end-line="78" />
-              <folding>
-                <marker date="1555567468660" expanded="true" signature="280:330" ph="..." />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Graph Theory/dijkstra.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -43,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Greedy/data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101384">
+            <state relative-caret-position="85376">
               <caret line="5" column="389431" selection-start-line="5" selection-start-column="389431" selection-end-line="5" selection-end-column="389431" />
             </state>
           </provider>
@@ -97,12 +94,13 @@
         <option value="$PROJECT_DIR$/Graph Theory/Cloudy_Day.py" />
         <option value="$PROJECT_DIR$/Greedy/data.txt" />
         <option value="$PROJECT_DIR$/Greedy/Cloudy_Day.py" />
+        <option value="$PROJECT_DIR$/Graph Theory/dijkstra.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="241" />
-    <option name="y" value="73" />
+    <option name="x" value="240" />
+    <option name="y" value="72" />
     <option name="width" value="1401" />
     <option name="height" value="990" />
   </component>
@@ -131,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,11 +137,15 @@
               <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph Theory" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,16 +314,18 @@
       <updated>1538647462775</updated>
       <workItem from="1553868080276" duration="789000" />
       <workItem from="1554383712323" duration="64000" />
+      <workItem from="1571942719879" duration="91000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="853000" />
+    <option name="totallyTimeSpent" value="944000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2528978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25707355" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -706,15 +711,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Greedy/Cloudy_Day.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
+        <state relative-caret-position="1232">
           <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Greedy/data.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101384">
+        <state relative-caret-position="85376">
           <caret line="5" column="389431" selection-start-line="5" selection-start-column="389431" selection-end-line="5" selection-end-column="389431" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Miscellaneous/Maximum_Xor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="53" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph Theory/dijkstra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
         </state>
       </provider>
     </entry>
